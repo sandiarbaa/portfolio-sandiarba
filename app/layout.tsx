@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { StoreProvider } from "./redux/StoreProvider";
 import { useAppSelector } from "./redux/hooks";
+import { useEffect, useState } from "react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -41,6 +42,16 @@ export default function RootLayout({
 
 const DarkModeWrapper = ({ children }: { children: React.ReactNode }) => {
   const darkMode = useAppSelector((state) => state.theme.darkMode);
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
+
+  if (!isHydrated) {
+    return <html lang="en">{children}</html>;
+  }
+
   return (
     <html lang="en" className={`${darkMode ? "dark" : ""}`}>
       {children}
