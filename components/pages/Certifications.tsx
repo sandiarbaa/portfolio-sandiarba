@@ -1,156 +1,3 @@
-// import {
-//   Pagination,
-//   PaginationContent,
-//   PaginationItem,
-//   PaginationLink,
-//   PaginationNext,
-//   PaginationPrevious,
-// } from "@/components/ui/pagination";
-
-// const Certifications = ({ addPadding }: { addPadding: boolean }) => {
-//   return (
-//     <section
-//       className={`min-h-screen flex flex-col justify-center items-center ${addPadding ? "py-20" : ""}`}
-//     >
-//       <div className="flex flex-col items-center">
-//         <h1 className="text-xl font-bold">Certifications</h1>
-//         <p className="text-sm w-72 text-center">
-//           Have a look at the certifications that empower my professional
-//           journey.
-//         </p>
-//       </div>
-
-//       {/* Pagination */}
-//       <Pagination>
-//         <PaginationContent>
-//           <PaginationItem>
-//             <PaginationPrevious href="#" />
-//           </PaginationItem>
-//           <PaginationItem>
-//             <PaginationLink href="#">1</PaginationLink>
-//           </PaginationItem>
-//           <PaginationItem>
-//             <PaginationLink href="#" isActive>
-//               2
-//             </PaginationLink>
-//           </PaginationItem>
-//           <PaginationItem>
-//             <PaginationLink href="#">3</PaginationLink>
-//           </PaginationItem>
-//           <PaginationItem>
-//             <PaginationNext href="#" />
-//           </PaginationItem>
-//         </PaginationContent>
-//       </Pagination>
-//     </section>
-//   );
-// };
-
-// export default Certifications;
-
-// "use client";
-
-// import { useState } from "react";
-// import {
-//   Pagination,
-//   PaginationContent,
-//   PaginationItem,
-//   PaginationLink,
-//   PaginationNext,
-//   PaginationPrevious,
-// } from "@/components/ui/pagination";
-
-// const Certifications = ({ addPadding }: { addPadding: boolean }) => {
-//   // State untuk halaman aktif
-//   const [currentPage, setCurrentPage] = useState<number>(1);
-
-//   // Jumlah total halaman
-//   const totalPages: number = 5;
-
-//   // Fungsi untuk pindah ke halaman berikutnya
-//   const handleNext = (): void => {
-//     if (currentPage < totalPages) {
-//       setCurrentPage(currentPage + 1);
-//     }
-//   };
-
-//   // Fungsi untuk pindah ke halaman sebelumnya
-//   const handlePrevious = (): void => {
-//     if (currentPage > 1) {
-//       setCurrentPage(currentPage - 1);
-//     }
-//   };
-
-//   // Fungsi untuk pindah ke halaman tertentu
-//   const handlePageChange = (page: number): void => {
-//     setCurrentPage(page);
-//   };
-
-//   return (
-//     <section
-//       className={`min-h-screen flex flex-col justify-center items-center ${
-//         addPadding ? "py-20" : ""
-//       }`}
-//     >
-//       <div className="flex flex-col items-center">
-//         <h1 className="text-xl font-bold">Certifications</h1>
-//         <p className="text-sm w-72 text-center">
-//           Have a look at the certifications that empower my professional
-//           journey.
-//         </p>
-//       </div>
-
-//       {/* Konten Berdasarkan Halaman */}
-//       <div className="my-5">
-//         <h2 className="text-2xl">Hello {currentPage}</h2>
-//       </div>
-
-//       {/* Pagination */}
-//       <Pagination>
-//         <PaginationContent>
-//           <PaginationItem>
-//             <PaginationPrevious
-//               href="#"
-//               onClick={(e) => {
-//                 e.preventDefault();
-//                 handlePrevious();
-//               }}
-//             />
-//           </PaginationItem>
-
-//           {/* Buat Link untuk Setiap Halaman */}
-//           {[...Array(totalPages)].map((_, index) => (
-//             <PaginationItem key={index}>
-//               <PaginationLink
-//                 href="#"
-//                 isActive={currentPage === index + 1}
-//                 onClick={(e) => {
-//                   e.preventDefault();
-//                   handlePageChange(index + 1);
-//                 }}
-//               >
-//                 {index + 1}
-//               </PaginationLink>
-//             </PaginationItem>
-//           ))}
-
-//           <PaginationItem>
-//             <PaginationNext
-//               href="#"
-//               onClick={(e) => {
-//                 e.preventDefault();
-//                 handleNext();
-//               }}
-//             />
-//           </PaginationItem>
-//         </PaginationContent>
-//       </Pagination>
-//     </section>
-//   );
-// };
-
-// export default Certifications;
-
 "use client";
 
 import { useState } from "react";
@@ -246,7 +93,7 @@ const getPaginatedData = (
   return data.slice(startIndex, endIndex);
 };
 
-const Certifications = ({ addPadding }: { addPadding: boolean }) => {
+const Certifications = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 3; // Jumlah kartu per halaman
   const totalPages = Math.ceil(cardData.length / itemsPerPage);
@@ -271,11 +118,7 @@ const Certifications = ({ addPadding }: { addPadding: boolean }) => {
   };
 
   return (
-    <section
-      className={`min-h-screen flex flex-col justify-center items-center ${
-        addPadding ? "py-20" : ""
-      }`}
-    >
+    <section className="min-h-screen flex flex-col justify-center items-center py-20">
       <div className="flex flex-col items-center">
         <h1 className="text-xl font-bold">Certifications</h1>
         <p className="text-sm w-72 text-center">

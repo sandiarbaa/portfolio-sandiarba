@@ -56,12 +56,10 @@ const skills = [
   { Icon: FaFigma, label: "Figma" },
 ];
 
-const Skills = ({ addPadding }: { addPadding: boolean }) => {
+const Skills = () => {
   return (
     <TooltipProvider>
-      <section
-        className={`min-h-screen flex flex-col justify-center items-center ${addPadding ? "py-20" : ""}`}
-      >
+      <section className="min-h-screen flex flex-col justify-center items-center py-20">
         <div className="flex flex-col items-center">
           <h1 className="text-xl font-bold">Skills</h1>
           <p className="text-sm w-72 text-center">

@@ -5,7 +5,7 @@ import React from "react";
 const CertificationsPage = () => {
   return (
     <PageLayout>
-      <Certifications addPadding={true} />
+      <Certifications />
     </PageLayout>
   );
 };

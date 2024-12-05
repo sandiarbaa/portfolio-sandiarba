@@ -71,9 +71,7 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
     router.push("/projects");
   };
   return (
-    <section
-      className={`min-h-screen flex flex-col items-center justify-center ${buttonAllProjects ? "py-0" : "py-20"}`}
-    >
+    <section className="min-h-screen flex flex-col items-center justify-center py-20">
       <div className="flex flex-col items-center my-5">
         <h1 className="text-xl font-bold">Projects</h1>
         <p className="text-sm w-72 text-center">

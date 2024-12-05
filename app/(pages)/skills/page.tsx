@@ -4,7 +4,7 @@ import Skills from "@/components/pages/Skills";
 const SkillsPage = () => {
   return (
     <PageLayout>
-      <Skills addPadding={true} />
+      <Skills />
     </PageLayout>
   );
 };

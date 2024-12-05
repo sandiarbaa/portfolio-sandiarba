@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <PageLayout>
         <About />
-        <Skills addPadding={false} />
+        <Skills />
         <Projects buttonAllProjects={true} />
-        <Certifications addPadding={false} />
+        <Certifications />
       </PageLayout>
     </>
   );
