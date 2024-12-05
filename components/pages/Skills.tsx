@@ -56,10 +56,12 @@ const skills = [
   { Icon: FaFigma, label: "Figma" },
 ];
 
-const Skills = () => {
+const Skills = ({ addPadding }: { addPadding: boolean }) => {
   return (
     <TooltipProvider>
-      <section className="min-h-screen flex flex-col justify-center items-center">
+      <section
+        className={`min-h-screen flex flex-col justify-center items-center ${addPadding ? "py-20" : ""}`}
+      >
         <div className="flex flex-col items-center">
           <h1 className="text-xl font-bold">Skills</h1>
           <p className="text-sm w-72 text-center">
@@ -72,7 +74,7 @@ const Skills = () => {
           {skills.map(({ Icon, label }, index) => (
             <Tooltip key={index}>
               <TooltipTrigger asChild>
-                <div className="p-5 border rounded-md dark:border-white hover:scale-95 transition duration-200 hover:bg-[#1FEE00]">
+                <div className="p-5 border cursor-pointer hover:shadow rounded-md dark:border-white hover:scale-95 transition duration-200 hover:bg-[#1FEE00]">
                   <Icon className="text-5xl" />
                 </div>
               </TooltipTrigger>

@@ -1,14 +1,10 @@
 import PageLayout from "@/components/layouts/PageLayout";
+import Skills from "@/components/pages/Skills";
 
 const SkillsPage = () => {
   return (
     <PageLayout>
-      <section
-        id="skills"
-        className="min-h-screen flex items-center justify-center"
-      >
-        <h1>Skills</h1>
-      </section>
+      <Skills addPadding={true} />
     </PageLayout>
   );
 };

@@ -50,7 +50,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="flex px-10 md:px-20 lg:px-40 justify-between py-5 absolute top-0 z-10 w-full">
+    <nav className="container mx-auto flex px-10 md:px-20 lg:px-40 justify-between py-5 absolute top-0 left-1/2 -translate-x-1/2 z-10">
       <div className="font-bold text-2xl text-black dark:text-white">
         <span className="text-[#1FEE00]">SAP</span>.
       </div>
@@ -98,8 +98,12 @@ const Navbar = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                   <DropdownMenuItem onClick={linkAbout}>About</DropdownMenuItem>
-                  <DropdownMenuItem onClick={linkSkills}>Skills</DropdownMenuItem>
-                  <DropdownMenuItem onClick={linkProjects}>Projects</DropdownMenuItem>
+                  <DropdownMenuItem onClick={linkSkills}>
+                    Skills
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={linkProjects}>
+                    Projects
+                  </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
             </li>

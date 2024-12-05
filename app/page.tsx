@@ -1,5 +1,6 @@
 import PageLayout from "@/components/layouts/PageLayout";
 import About from "@/components/pages/About";
+import Projects from "@/components/pages/Projects";
 import Skills from "@/components/pages/Skills";
 
 export default function Home() {
@@ -7,7 +8,8 @@ export default function Home() {
     <>
       <PageLayout>
         <About />
-        <Skills />
+        <Skills addPadding={false} />
+        <Projects buttonAllProjects={true} />
       </PageLayout>
     </>
   );

@@ -24,7 +24,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="flex flex-col px-10 md:px-20 lg:px-40 py-5">
+    <footer className="flex flex-col px-10 md:px-20 lg:px-40 py-5 container mx-auto">
       {/* Logo & Mode */}
       <section className="flex justify-between">
         <div className="font-bold text-2xl text-black dark:text-white">

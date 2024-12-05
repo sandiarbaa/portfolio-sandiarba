@@ -1,14 +1,10 @@
 import PageLayout from "@/components/layouts/PageLayout";
+import Projects from "@/components/pages/Projects";
 
 const ProjectsPage = () => {
   return (
     <PageLayout>
-      <section
-        id="skills"
-        className="min-h-screen flex items-center justify-center"
-      >
-        <h1>Projects</h1>
-      </section>
+      <Projects buttonAllProjects={false} />
     </PageLayout>
   );
 };
