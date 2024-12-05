@@ -44,6 +44,10 @@ const Navbar = () => {
     router.push("/projects");
   };
 
+  const linkCertifications = () => {
+    router.push("/certifications");
+  };
+
   if (!isHydrated) {
     // Render nothing or a fallback until hydration is complete
     return null;
@@ -66,6 +70,9 @@ const Navbar = () => {
             </li>
             <li className="navbar-link relative">
               <Link href="/projects">Projects</Link>
+            </li>
+            <li className="navbar-link relative">
+              <Link href="/certifications">Certifications</Link>
             </li>
             <li>
               <Button variant={"default"}>Contact Me</Button>
@@ -103,6 +110,9 @@ const Navbar = () => {
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={linkProjects}>
                     Projects
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={linkCertifications}>
+                    Certifications
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>

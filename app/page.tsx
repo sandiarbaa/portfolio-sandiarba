@@ -1,5 +1,6 @@
 import PageLayout from "@/components/layouts/PageLayout";
 import About from "@/components/pages/About";
+import Certifications from "@/components/pages/Certifications";
 import Projects from "@/components/pages/Projects";
 import Skills from "@/components/pages/Skills";
 
@@ -10,6 +11,7 @@ export default function Home() {
         <About />
         <Skills addPadding={false} />
         <Projects buttonAllProjects={true} />
+        <Certifications addPadding={false} />
       </PageLayout>
     </>
   );
