@@ -1,21 +1,14 @@
-import Footer from "@/components/fragments/Footer";
-import Navbar from "@/components/fragments/Navbar";
+import PageLayout from "@/components/layouts/PageLayout";
 import About from "@/components/pages/About";
+import Skills from "@/components/pages/Skills";
 
 export default function Home() {
   return (
     <>
-      <main>
-        <Navbar />
+      <PageLayout>
         <About />
-        <Footer />
-        {/* <section id="skills" className="min-h-screen">
-          <h1>Skills</h1>
-        </section>
-        <section id="projects" className="min-h-screen">
-          <h1>Projects</h1>
-        </section> */}
-      </main>
+        <Skills />
+      </PageLayout>
     </>
   );
 }
