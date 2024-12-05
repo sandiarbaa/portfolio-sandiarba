@@ -24,13 +24,13 @@ const About = () => {
 
       {/* Icons */}
       <ul className="flex gap-x-5 text-2xl justify-center my-5">
-        <li className="cursor-pointer">
+        <li className="icon-style">
           <FaGithub />
         </li>
-        <li className="cursor-pointer">
+        <li className="icon-style">
           <FaLinkedin />
         </li>
-        <li className="cursor-pointer">
+        <li className="icon-style">
           <FaInstagram />
         </li>
       </ul>

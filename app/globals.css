@@ -123,4 +123,7 @@
   .text-style {
     @apply text-black dark:text-white;
   }
+  .icon-style {
+    @apply cursor-pointer hover:text-[#1FEE00] transition duration-300;
+  }
 }
