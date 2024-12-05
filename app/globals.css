@@ -68,7 +68,8 @@
 
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 98%;
+    /* --primary: 0 0% 98%; */
+    --primary: 112, 100%, 46.7%;
 
     --primary-foreground: 240 5.9% 10%;
 
@@ -112,5 +113,14 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .navbar-link {
+    @apply transition-all duration-300 cursor-pointer hover:text-green-500 font-medium text-sm hover:underline;
+  }
+  .text-style {
+    @apply text-black dark:text-white;
   }
 }

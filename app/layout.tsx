@@ -53,7 +53,7 @@ const DarkModeWrapper = ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
-    <html lang="en" className={`${darkMode ? "dark" : ""}`}>
+    <html lang="en" className={`${darkMode ? "dark" : ""} scroll-smooth`}>
       {children}
     </html>
   );

@@ -17,8 +17,14 @@ export const themeSlice = createSlice({
   name: "theme",
   initialState,
   reducers: {
-    toggleDarkMode: (state) => {
-      state.darkMode = !state.darkMode;
+    DarkMode: (state) => {
+      state.darkMode = true;
+      if (typeof window !== "undefined") {
+        localStorage.setItem("darkMode", JSON.stringify(state.darkMode));
+      }
+    },
+    LightMode: (state) => {
+      state.darkMode = false;
       if (typeof window !== "undefined") {
         localStorage.setItem("darkMode", JSON.stringify(state.darkMode));
       }
@@ -26,5 +32,5 @@ export const themeSlice = createSlice({
   },
 });
 
-export const { toggleDarkMode } = themeSlice.actions;
+export const { DarkMode, LightMode } = themeSlice.actions;
 export default themeSlice.reducer;
