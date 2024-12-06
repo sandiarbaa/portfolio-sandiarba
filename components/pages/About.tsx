@@ -4,7 +4,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="flex flex-col justify-center mx-auto min-h-screen w-[300px] sm:w-[500px] lg:w-[700px] text-center">
+    <section className="flex flex-col justify-center mx-auto min-h-screen w-[300px] sm:w-[500px] lg:w-[700px] text-center py-20">
       {/* Title Name */}
       <p className="text-3xl md:text-4xl lg:text-5xl font-bold">
         Hi, I am <span className="text-[#1FEE00] underline">SandiArba</span> a{" "}

@@ -11,73 +11,179 @@ import {
 } from "@/components/ui/pagination";
 import Image from "next/image";
 
-// Data Dummy
 const cardData = [
   {
     id: 1,
-    title: "Card 1",
-    content: "This is content for card 1.",
-    image: "/img/projects/project-1.png",
+    title: "Alibaba Cloud Certification",
+    content:
+      "Certified in developing applications using Alibaba Cloud Services.",
+    image: "/img/certifications/alibaba.png",
+    credential: "",
   },
   {
     id: 2,
-    title: "Card 2",
-    content: "This is content for card 2.",
-    image: "/img/projects/project-1.png",
+    title: "Edspert Front-end React.js",
+    content:
+      "Learned React.js through Codepolitan by building a Split Bill app with dynamic features.",
+    image: "/img/certifications/edspert.png",
+    credential: "",
   },
   {
     id: 3,
-    title: "Card 3",
-    content: "This is content for card 3.",
-    image: "/img/projects/project-1.png",
+    title: "HTML Mastery",
+    content: "Deep dive into HTML structure, semantics, and web standards.",
+    image: "/img/certifications/html.png",
+    credential: "https://www.codepolitan.com/c/CS9CVSL/",
   },
   {
     id: 4,
-    title: "Card 4",
-    content: "This is content for card 4.",
-    image: "/img/projects/project-1.png",
+    title: "CSS Design Techniques",
+    content: "Mastered CSS for responsive and aesthetic web designs.",
+    image: "/img/certifications/css.png",
+    credential: "https://www.codepolitan.com/c/LTHPVOQ/",
   },
   {
     id: 5,
-    title: "Card 5",
-    content: "This is content for card 5.",
-    image: "/img/projects/project-1.png",
+    title: "Bootstrap Essentials",
+    content: "Learned rapid UI development with Bootstrap framework.",
+    image: "/img/certifications/bootstrap.png",
+    credential: "https://www.codepolitan.com/c/8YXA5SN/",
   },
   {
     id: 6,
-    title: "Card 6",
-    content: "This is content for card 6.",
-    image: "/img/projects/project-1.png",
+    title: "JavaScript Basics",
+    content: "Understanding core JavaScript concepts and syntax.",
+    image: "/img/certifications/javascript.png",
+    credential: "https://www.codepolitan.com/c/JEG9BKR/",
   },
   {
     id: 7,
-    title: "Card 7",
-    content: "This is content for card 7.",
-    image: "/img/projects/project-1.png",
+    title: "JS DOM Manipulation",
+    content: "Interacting with and manipulating the DOM using JavaScript.",
+    image: "/img/certifications/js-dom.png",
+    credential: "https://www.codepolitan.com/c/G4WQ6T8/",
   },
   {
     id: 8,
-    title: "Card 8",
-    content: "This is content for card 8.",
-    image: "/img/projects/project-1.png",
+    title: "Asynchronous JavaScript",
+    content: "Mastered async programming with Promises and async/await.",
+    image: "/img/certifications/js-asynchronous.png",
+    credential: "https://www.codepolitan.com/c/DFIK17B/",
   },
   {
     id: 9,
-    title: "Card 9",
-    content: "This is content for card 9.",
-    image: "/img/projects/project-1.png",
+    title: "AJAX & Web API",
+    content: "Fetching and displaying data using AJAX and RESTful APIs.",
+    image: "/img/certifications/ajax-web-api.png",
+    credential: "https://www.codepolitan.com/c/1RQFPSO/",
   },
   {
     id: 10,
-    title: "Card 10",
-    content: "This is content for card 10.",
-    image: "/img/projects/project-1.png",
+    title: "JavaScript OOP",
+    content: "Learned Object-Oriented Programming in JavaScript.",
+    image: "/img/certifications/js-oop.png",
+    credential: "https://www.codepolitan.com/c/KPUWTLL/",
   },
   {
     id: 11,
-    title: "Card 11",
-    content: "This is content for card 11.",
-    image: "/img/projects/project-1.png",
+    title: "Node.js Basics",
+    content:
+      "Understanding the basics of server-side development with Node.js.",
+    image: "/img/certifications/nodejs.png",
+    credential: "https://www.codepolitan.com/c/SRPLXNU/",
+  },
+  {
+    id: 12,
+    title: "Express.js Fundamentals",
+    content: "Learned building RESTful APIs using Express.js.",
+    image: "/img/certifications/express.png",
+    credential: "https://www.codepolitan.com/c/V5WYGOE/",
+  },
+  {
+    id: 13,
+    title: "Express.js with EJS",
+    content: "Dynamic web development using Express.js and EJS.",
+    image: "/img/certifications/express-ejs.png",
+    credential: "https://www.codepolitan.com/c/KAMOH2D/",
+  },
+  {
+    id: 14,
+    title: "RESTful API with Express",
+    content: "Built RESTful APIs following industry standards with Express.js.",
+    image: "/img/certifications/express-restful.png",
+    credential: "https://www.codepolitan.com/c/ZYJNRDP/",
+  },
+  {
+    id: 15,
+    title: "MongoDB Basics",
+    content: "Introduction to NoSQL databases using MongoDB.",
+    image: "/img/certifications/mongodb.png",
+    credential: "https://www.codepolitan.com/c/ZK6WBAA/",
+  },
+  {
+    id: 16,
+    title: "Mongoose in JavaScript",
+    content: "Database interaction in JavaScript using Mongoose ORM.",
+    image: "/img/certifications/mongodb-in-js-mongoose.png",
+    credential: "https://www.codepolitan.com/c/KGCB3QS/",
+  },
+  {
+    id: 17,
+    title: "Express & MongoDB Project",
+    content: "Create project of MongoDB with Express.js and Mongoose.",
+    image: "/img/certifications/mongo-express-ejs-mongoose.png",
+    credential: "https://www.codepolitan.com/c/AW9VF4H/",
+  },
+  {
+    id: 18,
+    title: "Express Middleware",
+    content: "Implementing middleware in Express.js.",
+    image: "/img/certifications/mongo-express-middleware.png",
+    credential: "https://www.codepolitan.com/c/HBNGUA6/",
+  },
+  {
+    id: 19,
+    title: "Error Handling in Express",
+    content: "Advanced error management in Express.js applications.",
+    image: "/img/certifications/mongo-error-handler-express.js-mongoose.png",
+    credential: "https://www.codepolitan.com/c/40CBU1A/",
+  },
+  {
+    id: 20,
+    title: "MongoDB Relationships",
+    content: "Modeling relationships in MongoDB with Mongoose.",
+    image: "/img/certifications/mongodb-relationship-mongoose.png",
+    credential: "https://www.codepolitan.com/c/ZRA9QWK/",
+  },
+  {
+    id: 21,
+    title: "Implementing Relationships in MongoDB",
+    content: "Practical implementation of relationships using Mongoose.",
+    image:
+      "/img/certifications/mongo-implementasi-relationship-express-mongoose.png",
+    credential: "https://www.codepolitan.com/c/VWEFQDU/",
+  },
+  {
+    id: 22,
+    title: "Express.js Routing & Cookies",
+    content: "Enhanced routing and cookie handling in Express.js.",
+    image: "/img/certifications/express-route-cookies.png",
+    credential: "https://www.codepolitan.com/c/4WSPMNZ/",
+  },
+  {
+    id: 23,
+    title: "Express.js Sessions",
+    content: "Learned session management in Express.js applications.",
+    image: "/img/certifications/express-session.png",
+    credential: "https://www.codepolitan.com/c/KHWF6RN/",
+  },
+  {
+    id: 24,
+    title: "Authentication with Express",
+    content:
+      "Built secure authentication systems using Express.js with ORM Mongoose",
+    image: "/img/certifications/express-mongoose-authentication.png",
+    credential: "https://www.codepolitan.com/c/M45RUJZ/",
   },
 ];
 
@@ -93,12 +199,56 @@ const getPaginatedData = (
   return data.slice(startIndex, endIndex);
 };
 
+// Fungsi untuk menentukan halaman yang akan ditampilkan
+const getVisiblePages = (currentPage: number, totalPages: number) => {
+  const pages: (number | string)[] = [];
+
+  // Tambahkan halaman pertama jika bukan halaman pertama
+  if (currentPage > 2) {
+    pages.push(1);
+    pages.push("...");
+  }
+
+  // Halaman yang sedang aktif
+  pages.push(currentPage);
+
+  // Tambahkan halaman terakhir jika bukan halaman terakhir
+  if (currentPage < totalPages - 1) {
+    pages.push("...");
+    pages.push(totalPages);
+  }
+
+  return pages;
+};
+// const getVisiblePages = (
+//   currentPage: number,
+//   totalPages: number,
+//   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+//   visiblePages: number
+// ) => {
+//   const pages: (number | string)[] = [];
+//   const startPage = Math.max(1, currentPage - 1);
+//   const endPage = Math.min(totalPages, currentPage + 1);
+
+//   if (startPage > 1) pages.push(1);
+//   if (startPage > 2) pages.push("...");
+
+//   for (let i = startPage; i <= endPage; i++) {
+//     pages.push(i);
+//   }
+
+//   if (endPage < totalPages - 1) pages.push("...");
+//   if (endPage < totalPages) pages.push(totalPages);
+
+//   return pages;
+// };
+
 const Certifications = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 3; // Jumlah kartu per halaman
+  const itemsPerPage = 3;
   const totalPages = Math.ceil(cardData.length / itemsPerPage);
+  // const visiblePages = 1; // Jumlah halaman yang terlihat selain elipsis
 
-  // Data untuk halaman saat ini
   const paginatedData = getPaginatedData(cardData, currentPage, itemsPerPage);
 
   const handleNext = () => {
@@ -117,6 +267,8 @@ const Certifications = () => {
     setCurrentPage(page);
   };
 
+  const visiblePageNumbers = getVisiblePages(currentPage, totalPages);
+
   return (
     <section className="min-h-screen flex flex-col justify-center items-center py-20">
       <div className="flex flex-col items-center">
@@ -127,33 +279,40 @@ const Certifications = () => {
         </p>
       </div>
 
-      {/* Render Cards */}
-      {/* <div className="my-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5"> */}
       <div className="my-5 flex flex-wrap justify-center gap-5">
         {paginatedData.map((card) => (
           <div
             key={card.id}
-            className="w-72 rounded-xl overflow-hidden border shadow bg-white dark:bg-slate-800"
+            className="w-72 rounded-xl border shadow bg-white dark:bg-slate-800 flex flex-col justify-between"
           >
-            <Image src={card.image} alt={card.title} width={400} height={400} />
-            <div className="text-xs p-5 text-center">
-              {/* <h2 className="text-lg font-bold">{card.title}</h2> */}
-              {/* <p>{card.content}</p> */}
-              <h2 className="text-lg font-bold">Certificate {card.title}</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Tempore odit numquam ullam delectus aspernatur totam magnam fuga
-                excepturi doloribus dolores.
-              </p>
-              <p className="text-[#1FEE00] text-base font-normal pt-3">
-                View Credential
+            <div className="overflow-hidden">
+              <Image
+                src={card.image}
+                alt={card.title}
+                width={400}
+                height={400}
+              />
+            </div>
+            <div className="text-xs p-5 text-center flex flex-col justify-between h-40">
+              <div>
+                <h2 className="text-lg font-bold">{card.title}</h2>
+                <p>{card.content}</p>
+              </div>
+              <p className="text-[#1FEE00] text-sm font-normal pt-3">
+                <a
+                  href={card.credential}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#1FEE00] hover:text-green-500 transition duration-300"
+                >
+                  View Credential
+                </a>
               </p>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Pagination */}
       <Pagination>
         <PaginationContent>
           <PaginationItem>
@@ -165,20 +324,26 @@ const Certifications = () => {
               }}
             />
           </PaginationItem>
-          {[...Array(totalPages)].map((_, index) => (
-            <PaginationItem key={index}>
-              <PaginationLink
-                href="#"
-                isActive={currentPage === index + 1}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handlePageChange(index + 1);
-                }}
-              >
-                {index + 1}
-              </PaginationLink>
-            </PaginationItem>
-          ))}
+          {visiblePageNumbers.map((page, index) =>
+            page === "..." ? (
+              <PaginationItem key={index}>
+                <span className="px-2">...</span>
+              </PaginationItem>
+            ) : (
+              <PaginationItem key={index}>
+                <PaginationLink
+                  href="#"
+                  isActive={currentPage === page}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handlePageChange(page as number);
+                  }}
+                >
+                  {page}
+                </PaginationLink>
+              </PaginationItem>
+            )
+          )}
           <PaginationItem>
             <PaginationNext
               href="#"
