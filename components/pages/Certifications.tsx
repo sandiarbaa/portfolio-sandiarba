@@ -18,7 +18,7 @@ const cardData = [
     content:
       "Certified in developing applications using Alibaba Cloud Services.",
     image: "/img/certifications/alibaba.png",
-    credential: "",
+    credential: "https://github.com/sandiarbaa/certificate",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const cardData = [
     content:
       "Learned React.js through Codepolitan by building a Split Bill app with dynamic features.",
     image: "/img/certifications/edspert.png",
-    credential: "",
+    credential: "https://github.com/sandiarbaa/certificate",
   },
   {
     id: 3,
