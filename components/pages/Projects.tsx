@@ -72,6 +72,14 @@ const projects = [
       "Website untuk melakukan untuk melakukan checkout product dari product yang tersedia.",
     projectURL: "https://github.com/sandiarbaa/shopping-cart",
   },
+  {
+    title: "Portfolio",
+    image: "/img/projects/project-6.png",
+    techStack: ["Next.js", "Redux", "Tailwind"],
+    description:
+      "Website Portfolio untuk menunjukan skills dan project-project yang telah saya kerjakan serta memiliki fitur Darkmode.",
+    projectURL: "https://github.com/sandiarbaa/portfolio-sandiarba",
+  },
 ];
 
 const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
