@@ -75,7 +75,15 @@ const Navbar = () => {
               <Link href="/certifications">Certifications</Link>
             </li>
             <li>
-              <Button variant={"default"}>Contact Me</Button>
+              <Button variant={"default"}>
+                <a
+                  href="mailto:sandiarbaa@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact Me
+                </a>
+              </Button>
             </li>
             <li>
               <DropdownMenu>
@@ -118,7 +126,15 @@ const Navbar = () => {
               </DropdownMenu>
             </li>
             <li>
-              <Button variant={"default"}>Contact Me</Button>
+              <Button variant={"default"}>
+                <a
+                  href="mailto:sandiarbaa@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact Me
+                </a>
+              </Button>
             </li>
             <li>
               <DropdownMenu>

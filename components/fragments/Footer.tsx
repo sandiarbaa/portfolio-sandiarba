@@ -52,16 +52,40 @@ const Footer = () => {
         <div>
           <ul className="flex gap-x-3 text-2xl justify-center my-5">
             <li className="icon-style">
-              <FaGithub />
+              <a
+                href="https://github.com/sandiarbaa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+              </a>
             </li>
             <li className="icon-style">
-              <FaLinkedin />
+              <a
+                href="https://www.linkedin.com/in/sandi-arba-putra/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />
+              </a>
             </li>
             <li className="icon-style">
-              <FaInstagram />
+              <a
+                href="https://www.instagram.com/_arbaa_/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
             </li>
             <li className="icon-style">
-              <MdEmail />
+              <a
+                href="mailto:sandiarbaa@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MdEmail />
+              </a>
             </li>
           </ul>
         </div>
