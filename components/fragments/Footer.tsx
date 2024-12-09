@@ -66,7 +66,7 @@ const Footer = () => {
           </ul>
         </div>
         <p>Built by 💖, available on GitHub.</p>
-        <p>© 2024 SANDIARBA All Rights Reserved.</p>
+        <p>© 2024 SandiArbaa All Rights Reserved.</p>
       </section>
     </footer>
   );

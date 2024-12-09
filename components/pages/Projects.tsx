@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
+import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 
 const projectsAbout = [
   {
@@ -10,22 +11,26 @@ const projectsAbout = [
     techStack: ["Next.js", "Express", "PostgreSQL"],
     description:
       "Website untuk melakukan proses kredit scoring dengan fitur yang terintegrasi dengan AI. Fitur utama melakukan pengecekan Identitas, Registrasi User dan Download Laporan User dalam bentuk PDF atau ZIP.",
+    // projectURL: "https://github.com/sandiarbaa/mknows-scoring-website",
+  },
+  {
+    title: "Booking Rental Mobil",
+    image: "/img/projects/project-2.png",
+    techStack: ["Laravel", "Bootstrap", "MySQL"],
+    description:
+      "Website untuk melakukan sewa mobil, ada fitur pengelolaan daftar sewa dan checkout sewa. Serta management data mobil yang akan disewakan",
+    projectURL: "https://github.com/sandiarbaa/Rental-Mobil-App",
   },
   {
     title: "E-Document Management",
-    image: "/img/projects/project-1.png",
-    techStack: ["React", "Node.js", "MongoDB"],
+    image: "/img/projects/project-3.png",
+    techStack: ["Laravel", "Bootstrap", "MySQL"],
     description:
-      "Platform untuk mengelola dokumen secara online dengan fitur unggah, unduh, dan berbagi dokumen secara aman menggunakan otentikasi user.",
-  },
-  {
-    title: "E-Document Management",
-    image: "/img/projects/project-1.png",
-    techStack: ["React", "Node.js", "MongoDB"],
-    description:
-      "Platform untuk mengelola dokumen secara online dengan fitur unggah, unduh, dan berbagi dokumen secara aman menggunakan otentikasi user.",
+      "Website untuk mengelola dokumen secara online dengan fitur unggah, edit, lihat, dan berbagi dokumen.",
+    projectURL: "https://github.com/sandiarbaa/laravel-doc",
   },
 ];
+
 const projects = [
   {
     title: "AI Credit Scoring",
@@ -33,34 +38,39 @@ const projects = [
     techStack: ["Next.js", "Express", "PostgreSQL"],
     description:
       "Website untuk melakukan proses kredit scoring dengan fitur yang terintegrasi dengan AI. Fitur utama melakukan pengecekan Identitas, Registrasi User dan Download Laporan User dalam bentuk PDF atau ZIP.",
+    // projectURL: "https://github.com/sandiarbaa/mknows-scoring-website",
+  },
+  {
+    title: "Booking Rental Mobil",
+    image: "/img/projects/project-2.png",
+    techStack: ["Laravel", "Bootstrap", "MySQL"],
+    description:
+      "Website untuk melakukan sewa mobil, ada fitur pengelolaan daftar sewa dan checkout sewa. Serta management data mobil yang akan disewakan",
+    projectURL: "https://github.com/sandiarbaa/Rental-Mobil-App",
   },
   {
     title: "E-Document Management",
-    image: "/img/projects/project-1.png",
-    techStack: ["React", "Node.js", "MongoDB"],
+    image: "/img/projects/project-3.png",
+    techStack: ["Laravel", "Bootstrap", "MySQL"],
     description:
-      "Platform untuk mengelola dokumen secara online dengan fitur unggah, unduh, dan berbagi dokumen secara aman menggunakan otentikasi user.",
+      "Website untuk mengelola dokumen secara online dengan fitur unggah, edit, lihat, dan berbagi dokumen.",
+    projectURL: "https://github.com/sandiarbaa/laravel-doc",
   },
   {
-    title: "E-Document Management",
-    image: "/img/projects/project-1.png",
-    techStack: ["React", "Node.js", "MongoDB"],
+    title: "Web Kecantikan Beauty G",
+    image: "/img/projects/project-4.png",
+    techStack: ["Laravel", "Tailwind", "MySQL"],
     description:
-      "Platform untuk mengelola dokumen secara online dengan fitur unggah, unduh, dan berbagi dokumen secara aman menggunakan otentikasi user.",
+      "Website penyedia berbagai produk kecantikan. Tersedia fitur multi role, approve user, registrasi user dan management produk.",
+    projectURL: "https://github.com/sandiarbaa/web-produk-kecantikan-beauty-g",
   },
   {
-    title: "E-Document Management",
-    image: "/img/projects/project-1.png",
-    techStack: ["React", "Node.js", "MongoDB"],
+    title: "Shopping Cart",
+    image: "/img/projects/project-5.png",
+    techStack: ["Next.js", "Redux", "Typescript"],
     description:
-      "Platform untuk mengelola dokumen secara online dengan fitur unggah, unduh, dan berbagi dokumen secara aman menggunakan otentikasi user.",
-  },
-  {
-    title: "E-Document Management",
-    image: "/img/projects/project-1.png",
-    techStack: ["React", "Node.js", "MongoDB"],
-    description:
-      "Platform untuk mengelola dokumen secara online dengan fitur unggah, unduh, dan berbagi dokumen secara aman menggunakan otentikasi user.",
+      "Website untuk melakukan untuk melakukan checkout product dari product yang tersedia.",
+    projectURL: "https://github.com/sandiarbaa/shopping-cart",
   },
 ];
 
@@ -70,6 +80,7 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
   const linkProjects = () => {
     router.push("/projects");
   };
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center py-20">
       <div className="flex flex-col items-center my-5">
@@ -79,6 +90,7 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
         </p>
       </div>
 
+      {/* Project Page */}
       <div
         className={`${buttonAllProjects ? "hidden" : "block"} flex flex-col md:flex-row flex-wrap justify-center gap-5 md:px-20`}
       >
@@ -97,7 +109,17 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
             {/* Project Details */}
             <div className="p-4 text-start flex flex-col justify-between h-48">
               <div>
-                <h2 className="font-bold text-lg">{project.title}</h2>
+                <h2 className="font-bold text-lg">
+                  <a
+                    href={project.projectURL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#1FEE00] transition duration-300 flex items-center gap-1.5"
+                  >
+                    <span>{project.title}</span>
+                    <HiMiniArrowTopRightOnSquare size={15} />
+                  </a>
+                </h2>
                 <p className="text-xs">{project.description}</p>
               </div>
               <ul className="text-xs flex gap-x-3 flex-wrap my-2">
@@ -115,7 +137,7 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
         ))}
       </div>
 
-      {/* Projects Grid */}
+      {/* Projects | About */}
       <div
         className={`${buttonAllProjects ? "block" : "hidden"} flex flex-col md:flex-row flex-wrap justify-center gap-5 md:px-20`}
       >
@@ -134,7 +156,17 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
             {/* Project Details */}
             <div className="p-4 text-start flex flex-col justify-between h-48">
               <div>
-                <h2 className="font-bold text-lg">{project.title}</h2>
+                <h2 className="font-bold text-lg">
+                  <a
+                    href={project.projectURL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#1FEE00] transition duration-300 flex items-center gap-1.5"
+                  >
+                    <span>{project.title}</span>
+                    <HiMiniArrowTopRightOnSquare size={15} />
+                  </a>
+                </h2>
                 <p className="text-xs">{project.description}</p>
               </div>
               <ul className="text-xs flex gap-x-3 flex-wrap my-2">
