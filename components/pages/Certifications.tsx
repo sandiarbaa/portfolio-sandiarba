@@ -22,11 +22,11 @@ const cardData = [
   },
   {
     id: 2,
-    title: "Edspert Front-end React.js",
+    title: "Fundamental ReactJS",
     content:
-      "Learned React.js through Codepolitan by building a Split Bill app with dynamic features.",
-    image: "/img/certifications/edspert.png",
-    credential: "https://github.com/sandiarbaa/certificate",
+      "Learned React.js core concept from Codepolitan like JSX, Component, Props, Hooks, Rendering, etc.",
+    image: "/img/certifications/react.png",
+    credential: "https://www.codepolitan.com/c/UMFC3NJ/",
   },
   {
     id: 3,
@@ -220,28 +220,6 @@ const getVisiblePages = (currentPage: number, totalPages: number) => {
 
   return pages;
 };
-// const getVisiblePages = (
-//   currentPage: number,
-//   totalPages: number,
-//   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-//   visiblePages: number
-// ) => {
-//   const pages: (number | string)[] = [];
-//   const startPage = Math.max(1, currentPage - 1);
-//   const endPage = Math.min(totalPages, currentPage + 1);
-
-//   if (startPage > 1) pages.push(1);
-//   if (startPage > 2) pages.push("...");
-
-//   for (let i = startPage; i <= endPage; i++) {
-//     pages.push(i);
-//   }
-
-//   if (endPage < totalPages - 1) pages.push("...");
-//   if (endPage < totalPages) pages.push(totalPages);
-
-//   return pages;
-// };
 
 const Certifications = () => {
   const [currentPage, setCurrentPage] = useState(1);
