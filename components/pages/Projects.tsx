@@ -10,7 +10,7 @@ const projectsAbout = [
     image: "/img/projects/project-1.png",
     techStack: ["Next.js", "Express", "PostgreSQL"],
     description:
-      "Website untuk melakukan proses kredit scoring dengan fitur yang terintegrasi dengan AI. Fitur utama melakukan pengecekan Identitas, Registrasi User dan Download Laporan User dalam bentuk PDF atau ZIP.",
+      "INTERNSHIP PROJECT | Website untuk melakukan proses kredit scoring dengan fitur yang terintegrasi dengan AI. Fitur utama melakukan pengecekan Identitas, Registrasi User dan Download Laporan User dalam bentuk PDF atau ZIP.",
     // projectURL: "https://github.com/sandiarbaa/mknows-scoring-website",
   },
   {
@@ -37,7 +37,7 @@ const projects = [
     image: "/img/projects/project-1.png",
     techStack: ["Next.js", "Express", "PostgreSQL"],
     description:
-      "Website untuk melakukan proses kredit scoring dengan fitur yang terintegrasi dengan AI. Fitur utama melakukan pengecekan Identitas, Registrasi User dan Download Laporan User dalam bentuk PDF atau ZIP.",
+      "INTERNSHIP PROJECT | Website untuk melakukan proses kredit scoring dengan fitur yang terintegrasi dengan AI. Fitur utama melakukan pengecekan Identitas, Registrasi User dan Download Laporan User dalam bentuk PDF atau ZIP.",
     // projectURL: "https://github.com/sandiarbaa/mknows-scoring-website",
   },
   {
@@ -61,7 +61,7 @@ const projects = [
     image: "/img/projects/project-4.png",
     techStack: ["Laravel", "Tailwind", "MySQL"],
     description:
-      "Website penyedia berbagai produk kecantikan. Tersedia fitur multi role, approve user, registrasi user dan management produk.",
+      "INTERNSHIP PROJECT | Website penyedia berbagai produk kecantikan. Tersedia fitur multi role, approve user, registrasi user dan management produk.",
     projectURL: "https://github.com/sandiarbaa/web-produk-kecantikan-beauty-g",
   },
   {
@@ -73,8 +73,16 @@ const projects = [
     projectURL: "https://github.com/sandiarbaa/shopping-cart",
   },
   {
-    title: "Portfolio",
+    title: "Split Bill",
     image: "/img/projects/project-6.png",
+    techStack: ["React", "Typescript", "Tailwind"],
+    description:
+      "Split Bill app untuk menghitung jumlah patungan dengan teman.",
+    projectURL: "https://split-bill-gules.vercel.app/",
+  },
+  {
+    title: "Portfolio",
+    image: "/img/projects/portfolio.png",
     techStack: ["Next.js", "Redux", "Tailwind"],
     description:
       "Website Portfolio untuk menunjukan skills dan project-project yang telah saya kerjakan serta memiliki fitur Darkmode.",
@@ -105,7 +113,7 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="w-72 rounded-xl overflow-hidden border shadow cursor-pointer bg-white dark:bg-slate-800"
+            className="w-72 rounded-xl overflow-hidden border shadow cursor-pointer bg-white dark:shadow-white dark:bg-slate-800"
           >
             {/* Project Image */}
             <Image
@@ -134,7 +142,7 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
                 {project.techStack.map((tech, i) => (
                   <li
                     key={i}
-                    className="px-2 py-1 rounded-xl bg-[#1FEE00] text-white font-bold"
+                    className="px-2 py-1 rounded-xl bg-[#1FEE00] text-white dark:text-slate-800 font-bold"
                   >
                     {tech}
                   </li>
@@ -152,7 +160,7 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
         {projectsAbout.map((project, index) => (
           <div
             key={index}
-            className="w-72 rounded-xl overflow-hidden border shadow cursor-pointer bg-white dark:bg-slate-800"
+            className="w-72 rounded-xl overflow-hidden shadow border dark:shadow-white cursor-pointer bg-white dark:bg-slate-800 "
           >
             {/* Project Image */}
             <Image
@@ -181,7 +189,7 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
                 {project.techStack.map((tech, i) => (
                   <li
                     key={i}
-                    className="px-2 py-1 rounded-xl bg-[#1FEE00] text-white font-bold"
+                    className="px-2 py-1 rounded-xl bg-[#1FEE00] text-white dark:text-slate-800 font-bold"
                   >
                     {tech}
                   </li>

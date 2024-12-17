@@ -261,7 +261,7 @@ const Certifications = () => {
         {paginatedData.map((card) => (
           <div
             key={card.id}
-            className="w-72 rounded-xl border shadow bg-white dark:bg-slate-800 flex flex-col justify-between"
+            className="w-72 rounded-xl border shadow bg-white dark:bg-slate-800 flex flex-col justify-between dark:shadow-white"
           >
             <div className="overflow-hidden">
               <Image
