@@ -74,6 +74,9 @@ const Navbar = () => {
             <li className="navbar-link relative">
               <Link href="/certifications">Certifications</Link>
             </li>
+            <li className="navbar-link relative">
+              <Link href="/experience">Experience</Link>
+            </li>
             <li>
               <Button variant={"default"}>
                 <a

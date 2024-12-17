@@ -4,6 +4,7 @@ import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 
+// Data Projects About
 const projectsAbout = [
   {
     title: "AI Credit Scoring",
@@ -31,6 +32,7 @@ const projectsAbout = [
   },
 ];
 
+// Data Projects Page
 const projects = [
   {
     title: "AI Credit Scoring",
@@ -78,7 +80,7 @@ const projects = [
     techStack: ["React", "Typescript", "Tailwind"],
     description:
       "Split Bill app untuk menghitung jumlah patungan dengan teman.",
-    projectURL: "https://split-bill-gules.vercel.app/",
+    projectURL: "https://github.com/sandiarbaa/split-bill",
   },
   {
     title: "Portfolio",

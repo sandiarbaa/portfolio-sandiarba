@@ -1,6 +1,6 @@
-import React from "react";
-// import { Button } from "@/components/ui/button";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+// import { MdEmail } from "react-icons/md";
+// import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
@@ -48,6 +48,15 @@ const About = () => {
             <FaInstagram />
           </a>
         </li>
+        {/* <li className="icon-style">
+          <a
+            href="mailto:sandiarbaa@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MdEmail />
+          </a>
+        </li> */}
       </ul>
 
       {/* Button */}
