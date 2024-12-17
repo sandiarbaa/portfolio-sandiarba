@@ -12,15 +12,15 @@ const Experience = () => {
       </div>
 
       {/* Main Section */}
-      <div className="flex flex-col md:flex-row gap-x-10 my-10">
-        <div className="w-[450px] order-2">
+      <div className="flex flex-col lg:flex-row gap-x-10 my-5 md:my-10">
+        <div className="w-[300px] md:w-[450px] order-2">
           <div className="mb-5 flex  flex-col  h-full justify-center">
             <h2 className="font-bold text-xl">Fullstack Web Developer</h2>
             <h2 className="font-normal text-sm">21 Jun - 21 Nov 2024</h2>
             <h2 className="font-bold tracking-wider mb-3 text-sm">
               PT Menara Indonesia | M-Knows Consulting | KampusGratis
             </h2>
-            <p className="mt-2">
+            <p className="mt-2 text-sm md:text-base">
               Internship as a Full-Stack Web Developer, contributing to the
               development of a web-based internal credit scoring application for
               M-Knows Consulting, automating and digitizing manual credit
@@ -89,7 +89,7 @@ const Experience = () => {
           </div> */}
         </div>
 
-        <div className="border rounded-md overflow-hidden dark:shadow-white h-[284px] order-1 mb-5 md:mb-0 shadow shadow-md">
+        <div className="border rounded-md overflow-hidden dark:shadow-white md:h-[283px] order-1 mb-5 lg:mb-0 shadow-md bg-red-500 w-[300px] md:w-[400px] mx-auto">
           <Image
             src={"/img/experience/fullstack-mknows-experience.png"}
             alt="fullstack-mknows-experience"
