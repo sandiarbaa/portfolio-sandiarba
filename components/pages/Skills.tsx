@@ -11,19 +11,23 @@ import {
   FaHtml5,
   FaLaravel,
   FaReact,
+  FaSass,
 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import {
   SiExpress,
+  SiFirebase,
   SiJavascript,
   SiJest,
+  SiJquery,
   SiMongodb,
   SiMysql,
   SiNginx,
   SiPhp,
   SiPrisma,
   SiTypescript,
+  SiVite,
 } from "react-icons/si";
 import {
   Tooltip,
@@ -38,21 +42,25 @@ const skills = [
   { Icon: SiJavascript, label: "JavaScript" },
   { Icon: SiPhp, label: "PHP" },
   { Icon: SiTypescript, label: "TypeScript" },
-  { Icon: FaGithub, label: "GitHub" },
   { Icon: FaBootstrap, label: "Bootstrap" },
   { Icon: RiTailwindCssFill, label: "Tailwind CSS" },
-  { Icon: FaLaravel, label: "Laravel" },
   { Icon: DiNodejs, label: "Node.js" },
+  { Icon: FaLaravel, label: "Laravel" },
+  { Icon: SiExpress, label: "Express.js" },
   { Icon: FaReact, label: "React.js" },
   { Icon: RiNextjsFill, label: "Next.js" },
-  { Icon: SiExpress, label: "Express.js" },
+  { Icon: SiVite, label: "Vite.js" },
+  { Icon: FaSass, label: "Sass" },
+  { Icon: FaGithub, label: "GitHub" },
   { Icon: SiMysql, label: "MySQL" },
   { Icon: BiLogoPostgresql, label: "PostgreSQL" },
   { Icon: SiMongodb, label: "MongoDB" },
+  { Icon: SiFirebase, label: "Firebase" },
   { Icon: SiPrisma, label: "Prisma" },
   { Icon: FaAws, label: "AWS" },
   { Icon: SiNginx, label: "Nginx" },
   { Icon: SiJest, label: "Jest" },
+  { Icon: SiJquery, label: "JQuery" },
   { Icon: FaFigma, label: "Figma" },
 ];
 
