@@ -5,6 +5,7 @@ import { DiNodejs } from "react-icons/di";
 import {
   FaAws,
   FaBootstrap,
+  FaDocker,
   FaFigma,
   FaGithub,
   FaHtml5,
@@ -58,10 +59,11 @@ const skills = [
   { Icon: SiMongodb, label: "MongoDB" },
   { Icon: SiFirebase, label: "Firebase" },
   { Icon: SiPrisma, label: "Prisma" },
+  { Icon: SiJquery, label: "JQuery" },
   { Icon: FaAws, label: "AWS" },
   { Icon: SiNginx, label: "Nginx" },
   { Icon: SiJest, label: "Jest" },
-  { Icon: SiJquery, label: "JQuery" },
+  { Icon: FaDocker, label: "Docker" },
   { Icon: FaFigma, label: "Figma" },
 ];
 

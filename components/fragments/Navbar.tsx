@@ -52,6 +52,10 @@ const Navbar = () => {
     router.push("/certifications");
   };
 
+  const linkExperience = () => {
+    router.push("/experience");
+  };
+
   if (!isHydrated) {
     // Render nothing or a fallback until hydration is complete
     return null;
@@ -134,6 +138,9 @@ const Navbar = () => {
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={linkCertifications}>
                     Certifications
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={linkExperience}>
+                    Experience
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
