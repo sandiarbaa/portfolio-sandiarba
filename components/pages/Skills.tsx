@@ -27,6 +27,7 @@ import {
   SiNginx,
   SiPhp,
   SiPrisma,
+  SiRedux,
   SiTypescript,
   SiVite,
 } from "react-icons/si";
@@ -50,6 +51,7 @@ const skills = [
   { Icon: SiExpress, label: "Express.js" },
   { Icon: FaReact, label: "React.js" },
   { Icon: RiNextjsFill, label: "Next.js" },
+  { Icon: SiRedux, label: "Redux" },
   { Icon: FaVuejs, label: "Vue.js" },
   { Icon: SiVite, label: "Vite.js" },
   { Icon: FaSass, label: "Sass" },

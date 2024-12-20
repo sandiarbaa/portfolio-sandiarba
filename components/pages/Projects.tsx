@@ -8,27 +8,31 @@ import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 const projectsAbout = [
   {
     title: "AI Credit Scoring",
-    image: "/img/projects/project-1.png",
+    type: "Fullstack",
+    image: "/img/projects/ai-credit-scoring.png",
     techStack: ["Next.js", "Express", "PostgreSQL"],
     description:
-      "INTERNSHIP PROJECT | Website untuk melakukan proses kredit scoring dengan fitur yang terintegrasi dengan AI. Fitur utama melakukan pengecekan Identitas, Registrasi User dan Download Laporan User dalam bentuk PDF atau ZIP.",
+      "Website to perform credit scoring process with features integrated with AI. The main features are checking Identity, User Registration and Downloading User Reports in PDF or ZIP format.",
     // projectURL: "https://github.com/sandiarbaa/mknows-scoring-website",
   },
   {
-    title: "Booking Rental Mobil",
-    image: "/img/projects/project-2.png",
-    techStack: ["Laravel", "Bootstrap", "MySQL"],
+    title: "Shopping Cart",
+    type: "Fullstack",
+    image: "/img/projects/shopping-cart-mevn.png",
+    techStack: ["Vue", "Express", "MongoDB"],
     description:
-      "Website untuk melakukan sewa mobil, ada fitur pengelolaan daftar sewa dan checkout sewa. Serta management data mobil yang akan disewakan",
-    projectURL: "https://github.com/sandiarbaa/Rental-Mobil-App",
+      "Website for product checkout. There is a feature to view details and all products, then you can add products to your cart and calculate your total purchases.",
+    projectURL:
+      "https://github.com/sandiarbaa/vuestore-source-code/blob/main/vuestore-source-code.md",
   },
   {
-    title: "E-Document Management",
-    image: "/img/projects/project-3.png",
-    techStack: ["Laravel", "Bootstrap", "MySQL"],
+    title: "Beauty G",
+    type: "Fullstack",
+    image: "/img/projects/beauty-g.png",
+    techStack: ["Laravel", "Tailwind", "MySQL"],
     description:
-      "Website untuk mengelola dokumen secara online dengan fitur unggah, edit, lihat, dan berbagi dokumen.",
-    projectURL: "https://github.com/sandiarbaa/laravel-doc",
+      "Website for managing documents online with features for uploading, editing, viewing and sharing documents.",
+    projectURL: "https://github.com/sandiarbaa/web-produk-kecantikan-beauty-g",
   },
 ];
 
@@ -36,58 +40,75 @@ const projectsAbout = [
 const projects = [
   {
     title: "AI Credit Scoring",
-    image: "/img/projects/project-1.png",
+    type: "Fullstack",
+    image: "/img/projects/ai-credit-scoring.png",
     techStack: ["Next.js", "Express", "PostgreSQL"],
     description:
-      "INTERNSHIP PROJECT | Website untuk melakukan proses kredit scoring dengan fitur yang terintegrasi dengan AI. Fitur utama melakukan pengecekan Identitas, Registrasi User dan Download Laporan User dalam bentuk PDF atau ZIP.",
+      "Internship Project | Website to perform credit scoring process with features integrated with AI. The main features are checking Identity, User Registration and Downloading User Reports in PDF or ZIP format.",
     // projectURL: "https://github.com/sandiarbaa/mknows-scoring-website",
   },
   {
-    title: "Booking Rental Mobil",
-    image: "/img/projects/project-2.png",
-    techStack: ["Laravel", "Bootstrap", "MySQL"],
+    title: "Shopping Cart",
+    type: "Fullstack",
+    image: "/img/projects/shopping-cart-mevn.png",
+    techStack: ["Vue", "Express", "MongoDB"],
     description:
-      "Website untuk melakukan sewa mobil, ada fitur pengelolaan daftar sewa dan checkout sewa. Serta management data mobil yang akan disewakan",
-    projectURL: "https://github.com/sandiarbaa/Rental-Mobil-App",
+      "Bootcamp Project | Website for product checkout. There is a feature to view details and all products, then you can add products to your cart and calculate your total purchases.",
+    projectURL:
+      "https://github.com/sandiarbaa/vuestore-source-code/blob/main/vuestore-source-code.md",
   },
+
   {
-    title: "E-Document Management",
-    image: "/img/projects/project-3.png",
-    techStack: ["Laravel", "Bootstrap", "MySQL"],
-    description:
-      "Website untuk mengelola dokumen secara online dengan fitur unggah, edit, lihat, dan berbagi dokumen.",
-    projectURL: "https://github.com/sandiarbaa/laravel-doc",
-  },
-  {
-    title: "Web Kecantikan Beauty G",
-    image: "/img/projects/project-4.png",
+    title: "Beauty G",
+    type: "Fullstack",
+    image: "/img/projects/beauty-g.png",
     techStack: ["Laravel", "Tailwind", "MySQL"],
     description:
-      "INTERNSHIP PROJECT | Website penyedia berbagai produk kecantikan. Tersedia fitur multi role, approve user, registrasi user dan management produk.",
+      "Freelance Project | Website for managing documents online with features for uploading, editing, viewing and sharing documents.",
     projectURL: "https://github.com/sandiarbaa/web-produk-kecantikan-beauty-g",
   },
   {
-    title: "Shopping Cart",
-    image: "/img/projects/project-5.png",
-    techStack: ["Next.js", "Redux", "Typescript"],
+    title: "Cars Rent",
+    type: "Fullstack",
+    image: "/img/projects/cars-rent.png",
+    techStack: ["Laravel", "Bootstrap", "MySQL"],
     description:
-      "Website untuk melakukan untuk melakukan checkout product dari product yang tersedia.",
-    projectURL: "https://github.com/sandiarbaa/shopping-cart",
+      "Freelance Project | Website for car rental, there are features for managing rental lists and rental checkouts. As well as data management of cars to be rented.",
+    projectURL: "https://github.com/sandiarbaa/Rental-Mobil-App",
   },
   {
+    title: "E-Document",
+    type: "Fullstack",
+    image: "/img/projects/e-document.png",
+    techStack: ["Laravel", "Bootstrap", "MySQL"],
+    description:
+      "Freelance Project | Website for managing documents online with features for uploading, editing, viewing and sharing documents.",
+    projectURL: "https://github.com/sandiarbaa/laravel-doc",
+  },
+  // {
+  //   title: "Shopping Cart",
+  //   image: "/img/projects/shopping-cart-fe.png",
+  //   techStack: ["Next.js", "Redux", "Typescript"],
+  //   description:
+  //     "Website untuk melakukan untuk melakukan checkout product dari product yang tersedia.",
+  //   projectURL: "https://github.com/sandiarbaa/shopping-cart",
+  // },
+  {
     title: "Split Bill",
-    image: "/img/projects/project-6.png",
+    type: "Frontend",
+    image: "/img/projects/split-bill.png",
     techStack: ["React", "Typescript", "Tailwind"],
     description:
-      "Split Bill app untuk menghitung jumlah patungan dengan teman.",
+      "Bootcamp Project | Split Bill app to calculate the calculation of the amount of the split with friends. And can determine who makes the payment.",
     projectURL: "https://github.com/sandiarbaa/split-bill",
   },
   {
     title: "Portfolio",
+    type: "Frontend",
     image: "/img/projects/portfolio.png",
     techStack: ["Next.js", "Redux", "Tailwind"],
     description:
-      "Website Portfolio untuk menunjukan skills dan project-project yang telah saya kerjakan serta memiliki fitur Darkmode.",
+      "Personal Project | Portfolio website to show skills and projects that I have worked on and has a Darkmode feature.",
     projectURL: "https://github.com/sandiarbaa/portfolio-sandiarba",
   },
 ];
@@ -127,7 +148,7 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
             {/* Project Details */}
             <div className="p-4 text-start flex flex-col justify-between h-48">
               <div>
-                <h2 className="font-bold text-lg">
+                <h2 className="font-bold text-lg flex justify-between items-center">
                   <a
                     href={project.projectURL}
                     target="_blank"
@@ -137,6 +158,9 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
                     <span>{project.title}</span>
                     <HiMiniArrowTopRightOnSquare size={15} />
                   </a>
+                  <h4 className="text-xs italic text-white dark:text-black bg-black dark:bg-white font-bold px-2 py-0.5 rounded-xl">
+                    {project.type}
+                  </h4>
                 </h2>
                 <p className="text-xs">{project.description}</p>
               </div>
@@ -174,7 +198,7 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
             {/* Project Details */}
             <div className="p-4 text-start flex flex-col justify-between h-48">
               <div>
-                <h2 className="font-bold text-lg">
+                <h2 className="font-bold text-lg flex justify-between items-center">
                   <a
                     href={project.projectURL}
                     target="_blank"
@@ -184,6 +208,9 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
                     <span>{project.title}</span>
                     <HiMiniArrowTopRightOnSquare size={15} />
                   </a>
+                  <h4 className="text-xs italic text-white dark:text-black bg-black dark:bg-white font-bold px-2 py-0.5 rounded-xl">
+                    {project.type}
+                  </h4>
                 </h2>
                 <p className="text-xs">{project.description}</p>
               </div>
