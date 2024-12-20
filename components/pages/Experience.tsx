@@ -16,7 +16,7 @@ const Experience = () => {
         <div className="w-[300px] md:w-[450px] order-2">
           <div className="mb-5 flex  flex-col  h-full justify-center">
             <h2 className="font-bold text-xl">Fullstack Web Developer</h2>
-            <h2 className="font-normal text-sm">21 Jun - 21 Nov 2024</h2>
+            <h2 className="font-normal text-sm">21 Jun 2024 - 21 Nov 2024</h2>
             <h2 className="font-bold tracking-wider mb-3 text-sm">
               PT Menara Indonesia | M-Knows Consulting | KampusGratis
             </h2>
@@ -89,7 +89,7 @@ const Experience = () => {
           </div> */}
         </div>
 
-        <div className="border rounded-md overflow-hidden dark:shadow-white md:h-[283px] order-1 mb-5 lg:mb-0 shadow-md bg-red-500 w-[300px] md:w-[400px] mx-auto">
+        <div className="border rounded-md overflow-hidden dark:shadow-white md:h-[283px] order-1 mb-5 lg:mb-0 shadow-md w-[300px] md:w-[400px] mx-auto">
           <Image
             src={"/img/experience/fullstack-mknows-experience.png"}
             alt="fullstack-mknows-experience"

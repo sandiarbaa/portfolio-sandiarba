@@ -40,6 +40,10 @@ const Navbar = () => {
     router.push("/skills");
   };
 
+  const linkEducation = () => {
+    router.push("/education");
+  };
+
   const linkProjects = () => {
     router.push("/projects");
   };
@@ -67,6 +71,9 @@ const Navbar = () => {
             </li>
             <li className="navbar-link relative">
               <Link href="/skills">Skills</Link>
+            </li>
+            <li className="navbar-link relative">
+              <Link href="/education">Education</Link>
             </li>
             <li className="navbar-link relative">
               <Link href="/projects">Projects</Link>
@@ -118,6 +125,9 @@ const Navbar = () => {
                   <DropdownMenuItem onClick={linkAbout}>About</DropdownMenuItem>
                   <DropdownMenuItem onClick={linkSkills}>
                     Skills
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={linkEducation}>
+                    Education
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={linkProjects}>
                     Projects

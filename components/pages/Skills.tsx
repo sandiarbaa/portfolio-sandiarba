@@ -11,6 +11,7 @@ import {
   FaLaravel,
   FaReact,
   FaSass,
+  FaVuejs,
 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
@@ -48,6 +49,7 @@ const skills = [
   { Icon: SiExpress, label: "Express.js" },
   { Icon: FaReact, label: "React.js" },
   { Icon: RiNextjsFill, label: "Next.js" },
+  { Icon: FaVuejs, label: "Vue.js" },
   { Icon: SiVite, label: "Vite.js" },
   { Icon: FaSass, label: "Sass" },
   { Icon: FaGithub, label: "GitHub" },
