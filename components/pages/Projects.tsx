@@ -124,9 +124,15 @@ const Projects = ({ buttonAllProjects }: { buttonAllProjects: boolean }) => {
     <section className="min-h-screen flex flex-col items-center justify-center py-20">
       <div className="flex flex-col items-center my-5">
         <h1 className="text-xl font-bold">Projects</h1>
-        <p className="text-sm w-72 text-center">
-          Some of my skills I learned in my journey of self-taught coding.
-        </p>
+        {buttonAllProjects ? (
+          <p className="text-sm w-72 text-center">
+            Some of my projects i built, click view all for all projects.
+          </p>
+        ) : (
+          <p className="text-sm w-72 text-center">
+            Some of my projects i built, see my github for all projects.
+          </p>
+        )}
       </div>
 
       {/* Project Page */}

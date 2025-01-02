@@ -68,6 +68,81 @@ const Education = () => {
             </p>
           </div>
         </div>
+
+        {/* UMT */}
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-x-5 mb-16">
+          {/* Image */}
+          <div className="overflow-hidden rounded-md border shadow-md dark:shadow-white bg-slate-50 dark:bg-slate-100 w-[300px] md:w-[400px] flex items-center justify-center h-72">
+            <Image
+              src="/img/education/umt.png"
+              alt="umt-univ"
+              width={200}
+              height={0}
+            />
+          </div>
+          {/* Content */}
+          <div className="w-[300px] md:w-[450px] flex flex-col justify-center mx-auto mt-5 text-center">
+            <h2 className="font-bold text-sm md:text-base lg:text-lg">
+              Universitas Muhammadiyah Tangerang
+            </h2>
+            <h2 className="font-semibold text-slate-500 text-sm hidden md:block">
+              Faculty of Engineering - Informatics Engineering
+            </h2>
+            <div className="md:hidden">
+              <h2 className="font-semibold text-slate-500 text-sm">
+                Faculty of Engineering
+              </h2>
+              <h2 className="font-semibold text-slate-500 text-sm">
+                Informatics Engineering
+              </h2>
+            </div>
+            <h2 className="font-semibold text-slate-500 text-sm">
+              2024 - Present Day
+            </h2>
+            <p className="text-sm lg:text-base mt-3">
+              I am a student at Universitas Muhammadiyah Tangerang, Faculty of
+              Engineering, Informatics Engineering program, studying since 2022.
+              I focus on mastering programming, software development, and
+              computer networks. Besides gaining skills and knowledge, I have
+              also completed an internship to enhance my professional experience
+              and prepare myself for the IT industry.
+            </p>
+          </div>
+        </div>
+
+        {/* SMKN4 */}
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-x-5">
+          {/* Image */}
+          <div className="overflow-hidden rounded-md border shadow-md dark:shadow-white bg-slate-50 dark:bg-slate-100 w-[300px] md:w-[400px] flex items-center justify-center h-72">
+            <Image
+              src="/img/education/smkn4.png"
+              alt="umt-univ"
+              width={180}
+              height={0}
+            />
+          </div>
+          {/* Content */}
+          <div className="w-[300px] md:w-[450px] flex flex-col justify-center mx-auto mt-5 text-center">
+            <h2 className="font-bold text-sm md:text-base lg:text-lg">
+              SMKN 4 Tangerang
+            </h2>
+            <h2 className="font-semibold text-slate-500 text-sm">
+              Software engineering
+            </h2>
+            <h2 className="font-semibold text-slate-500 text-sm">
+              2019 - 2022
+            </h2>
+            <p className="text-sm lg:text-base mt-3">
+              I studied at SMKN 4 Tangerang, specializing in Software
+              Engineering, from 2019 to 2022. I gained skills in programming,
+              web development, database management, graphic design, and computer
+              networking. For my final project, I created a hotel reservation
+              website, showcasing my full-stack development abilities.
+              Graduating with a competent predicate, I am ready to excel in the
+              software engineering field.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
