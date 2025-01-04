@@ -97,7 +97,7 @@ const Education = () => {
               </h2>
             </div>
             <h2 className="font-semibold text-slate-500 text-sm">
-              2024 - Present Day
+              2022 - Present Day
             </h2>
             <p className="text-sm lg:text-base mt-3">
               I am a student at Universitas Muhammadiyah Tangerang, Faculty of
