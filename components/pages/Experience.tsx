@@ -15,8 +15,10 @@ const Experience = () => {
       <div className="flex flex-col lg:flex-row gap-x-10 my-5 md:my-10">
         <div className="w-[300px] md:w-[450px] order-2">
           <div className="mb-5 flex  flex-col  h-full justify-center">
-            <h2 className="font-bold text-xl">Fullstack Web Developer</h2>
-            <h2 className="font-normal text-sm">21 Jun 2024 - 21 Nov 2024</h2>
+            <h2 className="font-bold text-xl">
+              Fullstack Developer (Internship)
+            </h2>
+            <h2 className="font-normal text-sm">Jun 2024 - Nov 2024</h2>
             <h2 className="font-bold tracking-wider mb-3 text-sm">
               PT Menara Indonesia | M-Knows Consulting | KampusGratis
             </h2>
@@ -29,69 +31,49 @@ const Experience = () => {
               built with Express.js PostgreSQL, Deployed to AWS.
             </p>
           </div>
-
-          {/* Features List */}
-          {/* <div>
-            <h2 className="font-bold mb-3">
-              Features I developed in the Credit Scoring Project
-            </h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm font-light">
-              <li>
-                <span className="font-semibold">
-                  Role-based Authentication:
-                </span>{" "}
-                Implemented secure authentication with three roles (Superadmin,
-                Admin, User), each with unique permissions and capabilities.
-              </li>
-              <li>
-                <span className="font-semibold">AI Document Verification:</span>{" "}
-                Built a feature leveraging AI to verify KTP and selfie images,
-                ensuring identity validation before accessing other
-                functionalities.
-              </li>
-              <li>
-                <span className="font-semibold">AI Automation:</span> Developed
-                an automated document processing feature for uploads such as
-                NPWP, SIM, and other critical documents.
-              </li>
-              <li>
-                <span className="font-semibold">Report Management:</span>{" "}
-                Enabled users to view and download reports, supporting single
-                reports as PDFs or multiple reports as ZIP files.
-              </li>
-              <li>
-                <span className="font-semibold">Search Functionality:</span>{" "}
-                Added search capability to locate reports or user requests by
-                keywords such as person names or specific features used.
-              </li>
-              <li>
-                <span className="font-semibold">Dashboard Integration:</span>{" "}
-                Designed a dashboard with charts including vertical bars, double
-                vertical bars, doughnuts, and location maps (data integration in
-                progress).
-              </li>
-              <li>
-                <span className="font-semibold">Pagination & Selection:</span>{" "}
-                Implemented multi-selection for processing verified users and
-                features, integrated with table pagination.
-              </li>
-              <li>
-                <span className="font-semibold">Collaboration:</span> Worked
-                closely with UI/UX teams and product owners to align development
-                with client needs and expectations.
-              </li>
-              <li>
-                <span className="font-semibold">Deployment:</span> Deployed
-                front-end and back-end systems, including AI integrations, on
-                AWS EC2 with Nginx for server configuration.
-              </li>
-            </ul>
-          </div> */}
         </div>
 
         <div className="border rounded-md overflow-hidden dark:shadow-white md:h-[283px] order-1 mb-5 lg:mb-0 shadow-md w-[300px] md:w-[400px] mx-auto">
           <Image
             src={"/img/experience/fullstack-mknows-experience.png"}
+            alt="fullstack-mknows-experience"
+            width={400}
+            height={400}
+          />
+        </div>
+      </div>
+
+      <div className="flex flex-col lg:flex-row lg:items-center gap-x-10 my-5 md:my-10">
+        <div className="w-[300px] md:w-[450px] order-2">
+          <div className="mb-5 flex  flex-col  h-full justify-center">
+            <h2 className="font-bold text-xl">
+              Fullstack Developer (Fulltime)
+            </h2>
+            <h2 className="font-normal text-sm">Feb 2025 - Jul 2025</h2>
+            <h2 className="font-bold tracking-wider mb-3 text-sm">
+              PT Peksi Andaru Sakti | PASTI GROUP
+            </h2>
+            <p className="mt-2 text-sm md:text-base">
+              Full-time as a Full-Stack Developer, contributing to the
+              development of the Fund-Request feature, which includes Advance,
+              Expense, and Reimburse to support the company’s operational needs.
+              This feature enables employees such as sales, drivers, and
+              collectors to request travel funds, record expenses, and submit
+              reimbursements. The company had several internal applications for
+              different divisions, such as the Sales Activity App, Delivery App,
+              and Collection App. I initially developed the Fund-Request feature
+              in one application, and later replicated and implemented it across
+              the other division-specific apps. The Front-end was developed with
+              React.js and React Native (Expo), while the Back-end was built
+              with .NET, resulting in a more integrated, transparent, and
+              efficient internal financial system.
+            </p>
+          </div>
+        </div>
+
+        <div className="border rounded-md overflow-hidden dark:shadow-white md:h-[283px] order-1 mb-5 lg:mb-0 shadow-md w-[300px] md:w-[400px] mx-auto">
+          <Image
+            src={"/img/experience/logo-pas.jpeg"}
             alt="fullstack-mknows-experience"
             width={400}
             height={400}
