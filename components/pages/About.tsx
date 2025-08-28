@@ -1,6 +1,4 @@
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-// import { MdEmail } from "react-icons/md";
-// import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
@@ -8,7 +6,7 @@ const About = () => {
       {/* Title Name */}
       <p className="text-3xl md:text-4xl lg:text-5xl font-bold">
         Hi, I am <span className="text-[#1FEE00] underline">SandiArba</span> a{" "}
-        <br /> Fullstack Web Developer
+        <br /> Fullstack Developer
         <span className="text-[#1FEE00]">.</span>
       </p>
 
@@ -48,21 +46,7 @@ const About = () => {
             <FaInstagram />
           </a>
         </li>
-        {/* <li className="icon-style">
-          <a
-            href="mailto:sandiarbaa@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <MdEmail />
-          </a>
-        </li> */}
       </ul>
-
-      {/* Button */}
-      {/* <div>
-        <Button variant={"default"}>Download CV</Button>
-      </div> */}
     </section>
   );
 };
