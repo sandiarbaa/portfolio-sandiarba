@@ -7,6 +7,15 @@ import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 // Data Projects About
 const projectsAbout = [
   {
+    title: "Portal UMKM",
+    type: "Fullstack",
+    image: "/img/projects/portal-umkm.png",
+    techStack: ["Next.js", "Laravel", "MySQL"],
+    description:
+      "Website to gather UMKM. Displaying UMKM products, the admin can manage the existing UMKM, owners can manage their products, and buyers can contact sellers and purchase products via WhatsApp.",
+    projectURL: "https://portal-umkm-parung-serab.vercel.app/welcome",
+  },
+  {
     title: "AI Credit Scoring",
     type: "Fullstack",
     image: "/img/projects/ai-credit-scoring.png",
@@ -25,19 +34,18 @@ const projectsAbout = [
     projectURL:
       "https://github.com/sandiarbaa/vuestore-source-code/blob/main/vuestore-source-code.md",
   },
-  {
-    title: "Beauty G",
-    type: "Fullstack",
-    image: "/img/projects/beauty-g.png",
-    techStack: ["Laravel", "Tailwind", "MySQL"],
-    description:
-      "Website for managing documents online with features for uploading, editing, viewing and sharing documents.",
-    projectURL: "https://github.com/sandiarbaa/web-produk-kecantikan-beauty-g",
-  },
 ];
 
 // Data Projects Page
 const projects = [
+  {
+    title: "Portal UMKM",
+    type: "Fullstack",
+    image: "/img/projects/portal-umkm.png",
+    techStack: ["Next.js", "Laravel", "MySQL"],
+    description:
+      "Website to gather UMKM. Displaying UMKM products, the admin can manage the existing UMKM, owners can manage their products, and buyers can contact sellers and purchase products via WhatsApp.",
+  },
   {
     title: "AI Credit Scoring",
     type: "Fullstack",
