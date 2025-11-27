@@ -5,8 +5,6 @@ import { DiNodejs } from "react-icons/di";
 import {
   FaAws,
   FaBootstrap,
-  FaDocker,
-  FaFigma,
   FaGithub,
   FaHtml5,
   FaLaravel,
@@ -30,7 +28,11 @@ import {
   SiRedux,
   SiTypescript,
   SiVite,
+  SiDart,
+  SiFlutter,
+  SiDotnet,
 } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 import {
   Tooltip,
   TooltipContent,
@@ -65,8 +67,10 @@ const skills = [
   { Icon: FaAws, label: "AWS" },
   { Icon: SiNginx, label: "Nginx" },
   { Icon: SiJest, label: "Jest" },
-  { Icon: FaDocker, label: "Docker" },
-  { Icon: FaFigma, label: "Figma" },
+  { Icon: SiDart, label: "Dart" },
+  { Icon: SiFlutter, label: "Flutter" },
+  { Icon: TbBrandCSharp, label: "C#" },
+  { Icon: SiDotnet, label: ".Net Core" },
 ];
 
 const Skills = () => {
