@@ -7,6 +7,15 @@ import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 // Data Projects About
 const projectsAbout = [
   {
+    title: "Andaru Collection",
+    type: "Fullstack",
+    image: "/img/projects/andaru-collection.png",
+    techStack: ["React Vite", "React Native", ".Net Core"],
+    description:
+      "An operational website for the collection division that supports fund requests and report downloads, and is fully synchronized with web and mobile platforms so that every action—such as submissions from mobile and approvals from the web—can run in real-time.",
+    // projectURL: "https://portal-umkm-parung-serab.vercel.app/welcome",
+  },
+  {
     title: "Portal UMKM",
     type: "Fullstack",
     image: "/img/projects/portal-umkm.png",
@@ -39,12 +48,21 @@ const projectsAbout = [
 // Data Projects Page
 const projects = [
   {
+    title: "Andaru Collection",
+    type: "Fullstack",
+    image: "/img/projects/andaru-collection.png",
+    techStack: ["React Vite", "React Native", ".Net Core"],
+    description:
+      "An operational website for the collection division that supports fund requests and report downloads, and is fully synchronized with web and mobile platforms so that every action—such as submissions from mobile and approvals from the web—can run in real-time.",
+  },
+  {
     title: "Portal UMKM",
     type: "Fullstack",
     image: "/img/projects/portal-umkm.png",
     techStack: ["Next.js", "Laravel", "MySQL"],
     description:
       "Website to gather UMKM. Displaying UMKM products, the admin can manage the existing UMKM, owners can manage their products, and buyers can contact sellers and purchase products via WhatsApp.",
+    projectURL: "https://portal-umkm-parung-serab.vercel.app/welcome",
   },
   {
     title: "AI Credit Scoring",
